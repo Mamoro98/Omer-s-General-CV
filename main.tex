@@ -1,0 +1,306 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Omer Ebead} \\ \vspace{1pt}
+    {\underline{omer@aims.ac.za}} $|$ 
+    \href{https://www.linkedin.com/in/omer-ebead-a330a13a2/}{\underline{LinkedIn}} $|$
+    \href{https://morosama.vercel.app/}{\underline{Portfolio}} $|$
+    \href{https://github.com/Mamoro98}{\underline{Github}}
+\end{center}
+
+% ----------- Summary--------
+\section{Summary}
+A researcher working at the intersection of multi-agent systems and AI safety. My work spans Multi-Agent Reinforcement Learning (MARL) and cooperative AI, investigating how agents learn, generalise, and interact in complex multi-agent settings. Through my Master's at Stellenbosch University and ongoing research fellowships, I combine theoretical foundations in AI with hands-on implementation, bringing a background in Electrical Engineering and full-stack development to advance safe and robust AI systems.
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stellenbosch University | AIMS South Africa}{Sep. 2024 -- Sep. 2025}
+      {Masters degree in AI for Science}{Cape Town, South Africa}
+
+    \resumeSubheading
+      {University of Khartoum}{Aug. 2016 -- May 2021}
+      {Bachelors degree in Electrical and Electronic Engineering}{Khartoum, Sudan}
+
+  \resumeSubHeadingListEnd
+
+\vspace{0.2cm}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Cooperative AI Foundation $|$ \textnormal{\textit{Python, LLMs, Concordia}}}{Feb. 2026 -- Present}
+      {Research Fellow}{Cape Town, South Africa}
+      \resumeItemListStart
+        \resumeItem{Conducting research on adversarial exploitation in multi-agent LLM systems, investigating whether embedded adversarial agents can exploit information-sharing behaviours in cooperative settings.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {InstaDeep $|$ \textnormal{\textit{Python, JAX}}}{Aug. 2025 -- Jan. 2026}
+      {Research Engineer Intern}{Cape Town, South Africa}
+      \resumeItemListStart
+        \resumeItem{Contributed to a cutting-edge research project by developing and optimizing components of a large-scale framework for multi-agent reinforcement learning.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Freelancer $|$ \textnormal{\textit{Flask, Django, Nextjs}}}{Apr. 2023 -- Sep. 2024}
+      {Software Engineer}{Riyadh, Saudi Arabia}
+      \resumeItemListStart
+        \resumeItem{Designed and developed user interface, server and database for Customer's Ideas}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {AmunData $|$ \textnormal{\textit{Reactjs, Flask, Power BI}}}{Apr. 2022 -- Apr. 2023}
+      {Software Engineer}{Khartoum, Sudan}
+      \resumeItemListStart
+        \resumeItem{Designed and developed user interface, server, database, data preparation, data
+        processing, and data predictions.}
+        \resumeItem{Built systems to extract vegetation indexes from Satellite images and built models for predictions.}
+        \resumeItem{Collaborated with data analysis team for data visualization tasks using PowerBi.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {OROOMA $|$ \textnormal{\textit{Reactjs, Kotlin}}}{Jan. 2021 -- Apr. 2022}
+      {Software Engineer}{Khartoum, Sudan}
+      \resumeItemListStart
+        \resumeItem{Designed and developed user interface and server for multiple websites.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{0.2cm}
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {More Tasks, More Gains: an Analysis of Out-of-Distribution Generalisation}{2025}
+      {\textit{of Sequence Models for Offline Multi-Agent RL -- Under Review at ICML 2026}}{}
+      \resumeItemListStart
+        \resumeItem{Ulrich Armel Mbou Sob, \textbf{Omer Ebead}, et al. In offline MARL, increasing task diversity is far more important for generalisation than scaling dataset size. Multi-task models achieve a mean improvement of 3.2x on held-out test tasks compared to single-task models.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{0.2cm}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Multi-Task Multi-Agent Reinforcement Learning} $|$ \emph{Python, JAX, Flax}}{May 2025 -- Sep. 2025}
+      \resumeItemListStart
+        \resumeItem{Conducting master's research on advancing Multi-Agent Reinforcement Learning (MARL) by extending the Sable network architecture to handle multi-task multi-env settings.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Recommender System} $|$ \emph{Python}}{Nov. 2024}
+      \resumeItemListStart
+        \resumeItem{Built and developed a movie recommender system using the ALS algorithm.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Clinical} $|$ \emph{Reactjs, Nextjs}}{May 2023}
+      \resumeItemListStart
+        \resumeItem{Developed and designed the user interface of an online clinic's appointment website in UAE.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Rewash} $|$ \emph{Reactjs, Nextjs}}{May 2023}
+      \resumeItemListStart
+        \resumeItem{Developed and designed the user interface of a washing company's dashboard.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Portfolio} $|$ \emph{Nextjs}}{Jan. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed and designed a personal portfolio website.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Temporal Analysis of Regional Sustainability Using CNNs and Satellite Data} $|$ \emph{Python, Pytorch}}{May 2020}
+      \resumeItemListStart
+        \resumeItem{Developed a system to calculate a region's biocapacity from satellite images using convolutional neural networks (CNNs).}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{SunSeek EV} $|$ \emph{Arduino, C++}}{Apr. 2018}
+      \resumeItemListStart
+        \resumeItem{Built a self-charging solar car that tracks sunlight to charge its battery and moves to shade to protect its components.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{GloveControl} $|$ \emph{Arduino, C++}}{Apr. 2017}
+      \resumeItemListStart
+        \resumeItem{Built a sensor-equipped glove allowing users to control a computer through hand movements.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{0.2cm}
+
+
+\section{Awards}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item
+        \resumeSubheading
+            {Academic Excellence Award, AI for Science Master's}{Aug. 2025}
+            {\textit{Awarded for outstanding academic performance in the AIMS Master's program.}}{}
+
+    \vspace{0.2em}
+
+    \item
+        \resumeSubheading
+            {Google DeepMind Scholarship}{Sep. 2024}
+            {\textit{Prestigious scholarship awarded to fully fund Master's studies at AIMS South Africa.}}{}
+\end{itemize}
+
+\vspace{0.2cm}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, C++, SQL (Postgres), JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Reactjs, Nextjs, Node.js, Flask, Django, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, Azure, Google Cloud, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: Pandas, Numpy, Matplotlib, Pytorch, TensorFlow, Keras, JAX}
+    }}
+ \end{itemize}
+
+\vspace{0.2cm}
+
+
+ \section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: English : IELTS 7.0} \\
+     \textbf{Programs}{: Hasso Plattner d-school Afrika - Design Thinking, McKinsey Forward Program - Leadership} \\
+     
+    }}
+ \end{itemize}
+
+\vspace{0.2cm}
+
+  \section{References}
+    {Academic and professional references are available upon request.}
+
+%-------------------------------------------
+\end{document}
